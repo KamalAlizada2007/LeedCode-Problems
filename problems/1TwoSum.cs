@@ -2,19 +2,26 @@
 
 public class Solution
 {
-    public int[] TwoSum(int[] nums, int target)
+    public bool IsPalindrome(int x)
     {
-        for (int i = 0; i < nums.Length; i++)
+        int a = 0;
+        int c = x;
+        while (x > 0)
         {
-            for (int j = i + 1; j < nums.Length; j++)
-            {
-                if (nums[i] + nums[j] == target)
-                {
-                    return new int[] { i, j };
-                }
-            }
+            int b = x % 10;
+            a = a * 10 + b;
+            x = x / 10;
         }
 
-        return new int[] { -1, -1 };
+        if (a == c)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
     }
+
 }
