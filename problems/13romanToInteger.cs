@@ -1,6 +1,6 @@
 ﻿namespace LeedCode_Problems.problems;
 
-public class Solution
+public class Solution13
 {
     public int RomanToInt(string s)
     {
