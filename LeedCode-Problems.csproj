@@ -10,10 +10,12 @@
 
   <ItemGroup>
     <Compile Remove="problems\14. LongestCommonPrefix.cs" />
+    <Compile Remove="problems\26. RemoveDuplicatesfromSortedArray.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="problems\14. LongestCommonPrefix.cs" />
+    <None Include="problems\26. RemoveDuplicatesfromSortedArray.cs" />
   </ItemGroup>
 
 </Project>
