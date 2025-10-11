@@ -11,11 +11,13 @@
   <ItemGroup>
     <Compile Remove="problems\14. LongestCommonPrefix.cs" />
     <Compile Remove="problems\26. RemoveDuplicatesfromSortedArray.cs" />
+    <Compile Remove="problems\27. RemoveElement.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="problems\14. LongestCommonPrefix.cs" />
     <None Include="problems\26. RemoveDuplicatesfromSortedArray.cs" />
+    <None Include="problems\27. RemoveElement.cs" />
   </ItemGroup>
 
 </Project>
