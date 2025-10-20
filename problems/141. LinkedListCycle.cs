@@ -17,14 +17,14 @@ public class Solution141
 
         while (fast != null && fast.next != null)
         {
-            slow = slow.next;           // tısbağa 1 addım
-            fast = fast.next.next;      // dovşan 2 addım
+            slow = slow.next;          
+            fast = fast.next.next;     
 
             if (slow == fast)
-                return true;            // dövrə tapıldı
+                return true;           
         }
 
-        return false; // dövrə yoxdur
+        return false; 
     }
 }
 
