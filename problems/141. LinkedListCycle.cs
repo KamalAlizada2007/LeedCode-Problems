@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LeedCode_Problems.problems;
+public class Solution141
+{
+    public bool HasCycle(ListNode head)
+    {
+        if (head == null || head.next == null)
+            return false;
+
+        ListNode slow = head;
+        ListNode fast = head;
+
+        while (fast != null && fast.next != null)
+        {
+            slow = slow.next;           // tısbağa 1 addım
+            fast = fast.next.next;      // dovşan 2 addım
+
+            if (slow == fast)
+                return true;            // dövrə tapıldı
+        }
+
+        return false; // dövrə yoxdur
+    }
+}
+
+}
